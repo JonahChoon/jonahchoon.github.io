@@ -403,38 +403,58 @@ export default function App() {
       </div>
     ))}
   </div>
+)}{activeTab === 'activities' && (
+  <div className="space-y-12">
+    {/* ISC2 Youth Wing */}
+    <div className="relative pl-8 border-l-2 border-purple-500">
+      <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-600 border-4 border-[#020617] transition-colors" />
+      <div className="flex justify-between items-start mb-2 flex-wrap">
+        <h4 className={`text-lg font-bold ${isLight ? "text-slate-900" : "text-white"}`}>ISC2 Youth Wing Executive Committee</h4>
+        <span className="text-purple-500 font-mono text-xs font-bold uppercase tracking-widest">Jan 2025 — Present</span>
+      </div>
+      <p className="text-purple-400 text-xs font-bold mb-4 uppercase tracking-widest">Secretary</p>
+      <ul className={`text-sm space-y-3 leading-relaxed ${isLight ? "text-slate-600" : "text-slate-400"}`}>
+        <li>• Coordinating strategic initiatives to empower the next generation of cybersecurity professionals through community engagement.</li>
+        <li>• Collaborating with educational institutions, industry leaders, and government agencies to facilitate high-impact mentorship programs and industry visits.</li>
+        <li>• Strengthening national cybersecurity talent pipelines by fostering cross-ecosystem collaboration and knowledge sharing.</li>
+      </ul>
+    </div>
+
+    {/* InnovationLab */}
+    <div className="relative pl-8 border-l-2 border-blue-500">
+      <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-[#020617] transition-colors" />
+      <div className="flex justify-between items-start mb-2 flex-wrap">
+        <h4 className={`text-lg font-bold ${isLight ? "text-slate-900" : "text-white"}`}>InnovationLab @ NTU CCDS</h4>
+        <span className="text-blue-500 font-mono text-xs font-bold uppercase tracking-widest">Aug 2024 — Present</span>
+      </div>
+      <p className="text-blue-400 text-xs font-bold mb-4 uppercase tracking-widest">Main Committee (Secretary)</p>
+      <ul className={`text-sm space-y-3 leading-relaxed ${isLight ? "text-slate-600" : "text-slate-400"}`}>
+        <li>• Spearheading administrative operations and overseeing organizational workflows to ensure efficient lab governance.</li>
+        <li>• Curating and hosting technical workshops and mentoring sessions designed to bridge the gap between academic theory and industry practice.</li>
+        <li>• Successfully facilitated SummerBuild'25, a premier 5-week educational hackathon for over 100 participants to develop innovative software solutions.</li>
+      </ul>
+    </div>
+
+    {/* EXPANDED: NTU Hall Logistics Officer */}
+    <div className="relative pl-8 border-l-2 border-emerald-500">
+      <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-emerald-600 border-4 border-[#020617] transition-colors" />
+      <div className="flex justify-between items-start mb-2 flex-wrap">
+        <h4 className={`text-lg font-bold ${isLight ? "text-slate-900" : "text-white"}`}>NTU Residential Hall Council</h4>
+        <span className="text-emerald-500 font-mono text-xs font-bold uppercase tracking-widest">Aug 2025 — Present</span>
+      </div>
+      <p className="text-emerald-400 text-xs font-bold mb-4 uppercase tracking-widest">Logistics Officer (Elected)</p>
+      <ul className={`text-sm space-y-3 leading-relaxed ${isLight ? "text-slate-600" : "text-slate-400"}`}>
+        <li>• Orchestrating full-scale logistics operations for hall-wide residential events, managing end-to-end resource planning and distribution.</li>
+        <li>• Maintaining rigorous oversight of hall equipment inventory, ensuring 100% operational readiness for diverse student-led community initiatives.</li>
+        <li>• Directing procurement processes and coordinating with external vendors to optimize budget allocation for large-scale hall functions.</li>
+        <li>• Collaborating with the Hall Council to streamline venue management and technical setups for complex multidisciplinary events.</li>
+      </ul>
+    </div>
+  </div>
 )}
-
-                {activeTab === 'activities' && (
-                  <div className="space-y-12">
-                    <div className="relative pl-8 border-l-2 border-purple-500/20">
-                      <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-600 border-4 border-[#020617]" />
-                      <div className="flex justify-between items-start mb-2 flex-wrap">
-                        <h4 className={`text-lg font-bold ${isLight ? "text-slate-900" : "text-white"}`}>ISC2 Youth Wing Executive Committee</h4>
-                        <span className="text-purple-500 font-mono text-xs font-bold uppercase tracking-widest">Jan 2025 — Present</span>
-                      </div>
-                      <p className="text-purple-400 text-xs font-bold mb-4 uppercase tracking-widest">Secretary</p>
-                      <ul className={`text-sm space-y-3 leading-relaxed ${isLight ? "text-slate-600" : "text-slate-400"}`}>
-                        <li>• Fostered growth of a vibrant youth cybersecurity community by coordinating initiatives engaged, educated, and empowered students and young professionals.</li>
-                        <li>• Collaborated with educational institutions, industry leaders, and government agencies to deliver events, mentorships, and industry visits.</li>
-                        <li>• Emphasized to strengthening cybersecurity talent pipelines and fostering collaboration across ecosystem.</li>
-                      </ul>
-                    </div>
-
-                    <div className="relative pl-8 border-l-2 border-blue-500/20">
-                      <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-[#020617]" />
-                      <div className="flex justify-between items-start mb-2 flex-wrap">
-                        <h4 className={`text-lg font-bold ${isLight ? "text-slate-900" : "text-white"}`}>InnovationLab @ NTU CCDS</h4>
-                        <span className="text-blue-500 font-mono text-xs font-bold uppercase tracking-widest">Aug 2024 — Present</span>
-                      </div>
-                      <p className="text-blue-400 text-xs font-bold mb-4 uppercase tracking-widest">Top 4 (Secretary)</p>
-                      <p className={`text-sm leading-relaxed ${isLight ? "text-slate-600" : "text-slate-400"}`}>Facilitated SummerBuild'25, a 5-week educational hackathon for ~100 participants to build software projects of any theme. Supported participant learning and innovation in alignment with LOFA values.</p>
-                    </div>
-                  </div>
-                )}
-              </Card>
-            </motion.div>
-          </AnimatePresence>
+    </Card>
+  </motion.div>
+</AnimatePresence>
         </div>
 
         {/* ACHIEVEMENTS CARD */}
